@@ -69,7 +69,7 @@ class SPLC():
             return pd.DataFrame()
 
         # Read QuickFs Identifiers
-        id_qfs = pd.read_feather("C:/Users/Brayden Boyko/OneDrive/BOYKO TERMINAL/PROGRAMS/Data/Data Hub/Equity/Equity_Firm/Firms/Firm_List.feather")
+        id_qfs = pd.read_feather("https://github.com/boykowealth/splc_webscraper/raw/refs/heads/main/Firm_List.feather")
         id_qfs = pd.DataFrame(id_qfs)
 
         # Merge scraped data with id_qfs
@@ -111,7 +111,7 @@ class SPLC():
 
 
 ## MAIN
-company_list = pd.read_feather('C:/Users/Brayden Boyko/OneDrive/BOYKO TERMINAL/PROGRAMS/Data/Data Hub/Equity/Equity_Firm/Firms/Firm_List.feather')
+company_list = pd.read_feather('https://github.com/boykowealth/splc_webscraper/raw/refs/heads/main/Firm_List.feather')
 company_list = pd.DataFrame(company_list)
 # List of exchanges you want to filter by
 exchanges = ['NYSE', 'NASDAQ', 'AMEX', 'BATS', 'ARCA', 'TSXV', 'CSE', 'TSX']
